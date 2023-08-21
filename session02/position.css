@@ -1,0 +1,30 @@
+section {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000;
+}
+
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+  left: 30px;
+}
+
+.absolute {
+  position: absolute;
+  top: 30px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  background-color: #eee;
+}
+
+.sticky {
+  position: sticky;
+  top: 15px;
+}

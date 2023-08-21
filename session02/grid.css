@@ -1,0 +1,60 @@
+body {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.kotak1 {
+  grid-column: 1/4;
+}
+
+.kotak2 {
+  grid-column: 4/10;
+}
+
+.kotak3 {
+  grid-column: 1/10;
+}
+
+.kotak4 {
+  grid-column: 1/4;
+}
+
+.kotak5 {
+  grid-column: 4/7;
+  grid-row: 3/5;
+}
+
+.kotak6 {
+  grid-column: 7/10;
+}
+
+.kotak7 {
+  grid-column: 1/8;
+}
+
+@media screen and (max-width: 768px) {
+  #content {
+    grid-template-columns: 1fr;
+  }
+}
+
+#content div {
+  background-color: lightskyblue;
+  padding: 30px;
+  display: inline-block;
+  width: 150px;
+}
+
+#content div:nth-child(even) {
+  background-color: grey;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purwadhika - css position</title>
+  <link rel="stylesheet" type="text/css" href="/position.css" />
+</head>
+<body>
+  <section>
+    <h1>position: static</h1>
+    <hr />
+    <div class="static">
+      <p>hello world</p>
+    </div>
+  </section>
+  <section>
+    <h1>position: relative</h1>
+    <hr />
+    <div class="relative">
+      <span>hello world</span>
+    </div>
+  </section>
+  <section>
+    <h1>position: absolute</h1>
+    <div class="relative" style="min-height: 200px;">
+      <div class="absolute">
+        <p>I have position: relative ancestors 1</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1>position: fixed</h1>
+    <div class="fixed">
+      this element has fixed position.
+    </div>
+  </section>
+  <section style="min-height: 1200px;">
+    <h1>position: sticky</h1>
+    <div class="sticky">
+      <p>this paragraph is inside sticky container</p>
+    </div>
+  </section>
+</body>
+</html>

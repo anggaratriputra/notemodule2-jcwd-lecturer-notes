@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+  <form action="/forms" method="get">
+    <fieldset>
+      <legend><label for="nama">Nama</label></legend>
+      <input type="text" name="nama" id="nama" placeholder="isi nama anda!" />
+    </fieldset>
+    <fieldset>
+      <legend><label for="password">Password:</label></legend>
+      <input type="password" name="password" id="password" placeholder="isi password anda!" />
+    </fieldset>
+    <div>
+      <input type="checkbox" name="skills" id="skill1" value="programming" /> 
+      <label for="skill1">programming</label>
+      <input type="checkbox" name="skills" value="cooking" /> cooking
+      <input type="checkbox" name="skills" value="cleaning" /> cleaning
+    </div>
+    <div>
+      <input type="radio" name="gender" value="man" /> man
+      <input type="radio" name="gender" value="woman" /> woman
+    </div>
+    <input type="number" name="umur" min="0" max="100" />
+    <br />
+    <textarea name="alamat" placeholder="isi alamat anda!" rows="5" cols="64"></textarea>
+    <br />
+    <label for="favColor">apa warna favoritmu?</label>
+    <select name="favColor" id="favColor">
+      <option value="red">Merah</option>
+      <option value="blue" selected>Biru</option>
+      <option value="yellow">Kuning</option>
+    </select>
+    <br />
+    <button type="submit">Submit forms</button>
+    <button type="reset">Reset</button>
+    <button type="button">Do something</button>
+  </form>
+</body>
+</html>
