@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header div,
+header nav {
+  flex-grow: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+main div {
+  background-color: aqua;
+  padding: 30px;
+  display: inline-block;
+  height: 150px;
+}
+
+main div:nth-child(even) {
+  min-height: 250px;
+}

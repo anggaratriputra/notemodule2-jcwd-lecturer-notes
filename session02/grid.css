@@ -7,9 +7,9 @@ body {
 #content {
   max-width: 960px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  display: flex;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-gap: 20px;
 }
 
@@ -51,8 +51,6 @@ body {
 #content div {
   background-color: lightskyblue;
   padding: 30px;
-  display: inline-block;
-  width: 150px;
 }
 
 #content div:nth-child(even) {

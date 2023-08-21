@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  margin: 50px;
+  background-color: purple;
+  transition: transform ease-in 0.5s;
+}
+
+.box.moved {
+  transform: rotate(20deg);
+}
