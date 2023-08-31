@@ -10,7 +10,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("https://fakestoreapi.com/products", {})
       .then((res) => res.json())
       .then((res) => {
         dispatch(setProduct(res));
