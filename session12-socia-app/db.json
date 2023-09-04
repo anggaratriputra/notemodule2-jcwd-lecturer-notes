@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "zhr10",
+      "email": "ridho@gmail.com",
+      "password": "password"
+    },
+    {
+      "username": "ridhozhr10",
+      "email": "ridho@purwadhika.com",
+      "password": "ridhoazhar",
+      "id": 2
+    },
+    {
+      "username": "jonosubekti",
+      "email": "jonoss@gmail.com",
+      "password": "jonosubekti",
+      "id": 3
+    },
+    {
+      "username": "jakatarub",
+      "email": "jakatarub@gmail.com",
+      "password": "jakatarub",
+      "id": 4
+    },
+    {
+      "username": "ilham",
+      "email": "ilham@gmail.com",
+      "password": "ilham123",
+      "id": 5
+    },
+    {
+      "username": "ilham123",
+      "email": "ilham@gmail.net",
+      "password": "password123",
+      "id": 6
+    }
+  ],
+  "tweets": [
+    {
+      "id": 1,
+      "userId": 1,
+      "tweet": "lorem ipsum dolor sit amet",
+      "timestamp": 21389123
+    }
+  ],
+  "likes": [
+    {
+      "id": 1,
+      "userId": 1,
+      "tweetId": 1
+    }
+  ]
+}
