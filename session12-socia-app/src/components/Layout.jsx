@@ -12,23 +12,15 @@ import {
   Spacer,
   Text,
 } from "@chakra-ui/react";
-import { useEffect } from "react";
 import { FaChevronDown } from "react-icons/fa6";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { logout } from "../slices/auth";
 
 function Layout(props) {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   const profile = useSelector((state) => state.auth.profile);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    if (props.needLogin && !isLoggedIn) {
-      navigate("/login");
-    }
-  }, [props.needLogin, navigate, isLoggedIn]);
 
   return (
     <>
