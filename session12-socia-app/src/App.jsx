@@ -7,7 +7,7 @@ const Register = React.lazy(() => import("./pages/Register"));
 
 function App() {
   return (
-    <Suspense fallback={<div>loading...</div>}>
+    <Suspense>
       <Routes>
         <Route path="/" Component={Home}></Route>
         <Route path="/login" Component={Login}></Route>
