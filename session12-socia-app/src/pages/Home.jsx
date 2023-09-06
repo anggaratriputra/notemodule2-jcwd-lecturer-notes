@@ -2,6 +2,7 @@ import { Box, Container, Heading, Stack, VStack } from "@chakra-ui/react";
 import Layout from "../components/Layout";
 import UserCard from "../components/UserCard";
 import withAuth from "../withAuth";
+import FollowerList from "../components/FollowerList";
 
 function Home() {
   return (
@@ -9,7 +10,9 @@ function Home() {
       <Container maxW="container.xl">
         <Stack mt={5} direction={["column", null, "row"]}>
           <Box order={[2, null, 1]} w={["100%", null, "60%", "70%"]}>
-            <Box minW="full">homepage</Box>
+            <Box minW="full">
+              <FollowerList />
+            </Box>
           </Box>
           <Box
             order={[1, null, 2]}

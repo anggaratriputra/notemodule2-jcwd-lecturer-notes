@@ -1,4 +1,5 @@
 import { Button, Center, HStack, IconButton, Spacer } from "@chakra-ui/react";
+import { useState } from "react";
 import { FaUserPlus } from "react-icons/fa6";
 
 const color = [
@@ -15,6 +16,7 @@ const color = [
 ];
 
 function UserCard(props) {
+  const [display, setDisplay] = useState("inline-block");
   const unameUpper = props.username.toUpperCase();
   const initialAlp = unameUpper.charCodeAt(0) - 71;
 
@@ -34,7 +36,12 @@ function UserCard(props) {
       </Button>
       <Spacer />
       <IconButton
+        style={{ display }}
+        onClick={() => {
+          setDisplay("none");
+        }}
         colorScheme="orange"
+        aria-label="add-user"
         icon={<FaUserPlus />}
         variant="ghost"
         fontSize="2xl"
