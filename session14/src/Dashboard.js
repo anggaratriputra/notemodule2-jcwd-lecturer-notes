@@ -27,7 +27,7 @@ function Dashboard({ setOpenTab }) {
       };
     });
     setMovies(parseData);
-  }, [moviesCollectionRef]);
+  }, []);
 
   useEffect(() => {
     getMovies();
